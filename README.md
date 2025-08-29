@@ -163,7 +163,7 @@ GO
 
 ### 3. CTAS (Create Table As Select)
 
-- **Task 6: Create Summary Tables**: Used CTAS to generate new tables based on query results - each book and total book_issued_cnt**
+**Task 6: Create Summary Tables**: Used CTAS to generate new tables based on query results - each book and total book_issued_cnt**
 
 ```sql
 SELECT 
@@ -184,7 +184,7 @@ GO
 
 The following SQL queries were used to address specific questions:
 
-Task 7. **Retrieve All Books in a Specific Category**:
+**Task 7: Retrieve All Books in a Specific Category**:
 
 ```sql
 SELECT * FROM books
@@ -192,7 +192,7 @@ WHERE category= 'Classic';
 GO
 ```
 
-8. **Task 8: Find Total Rental Income by Category**:
+**Task 8: Find Total Rental Income by Category**:
 
 ```sql
 WITH RENTAL_CTE AS(
@@ -206,7 +206,7 @@ ORDER BY [TOTAL RENTAL INCOME] DESC;
 GO
 ```
 
-9. **List Members Who Registered in the Last 180 Days**:
+**Task 9: List Members Who Registered in the Last 180 Days**:
 ```sql
 WITH "180 CTE" AS (
 	SELECT member_id, member_name, reg_date , 
@@ -222,7 +222,7 @@ SELECT * FROM "180 CTE";
 GO
 ```
 
-10. **List Employees with Their Branch Manager's Name and their branch details**:
+**Task 10: List Employees with Their Branch Manager's Name and their branch details**:
 
 ```sql
 WITH BRANCH_CTE AS(
@@ -234,14 +234,14 @@ SELECT * FROM BRANCH_CTE;
 GO
 ```
 
-Task 11. **Create a Table of Books with Rental Price Above a Certain Threshold**:
+**Task 11: Create a Table of Books with Rental Price Above a Certain Threshold**:
 ```sql
 SELECT * FROM books
 WHERE rental_price>7.00;
 GO
 ```
 
-Task 12: **Retrieve the List of Books Not Yet Returned**
+**Task 12: Retrieve the List of Books Not Yet Returned**
 ```sql
 SELECT * FROM issued_status as ist
 LEFT JOIN
@@ -429,7 +429,7 @@ WHERE RANK_NO <= 3
 ORDER BY number_of_books_processed DESC;
 ```  
 
-**Task 19: Stored Procedure**
+**Task 18: Stored Procedure**
 Objective:
 Create a stored procedure to manage the status of books in a library system.
 Description:
