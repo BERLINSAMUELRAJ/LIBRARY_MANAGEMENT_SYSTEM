@@ -182,6 +182,8 @@ GO
 
 ### 4. Data Analysis & Findings
 
+![](https://github.com/BERLINSAMUELRAJ/LIBRARY_MANAGEMENT_SYSTEM/blob/main/library-management-system.png)
+
 The following SQL queries were used to address specific questions:
 
 **Task 7: Retrieve All Books in a Specific Category**:
